@@ -3,6 +3,10 @@ import Navbar from "./navbar/Navbar";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
+import SpeedDialExpansion from "./navbar/SpeedDialExpansion.jsx";
+
+
+
 const App = () => {
   const [val, setVal] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
@@ -36,8 +40,12 @@ const App = () => {
         <div className={`icon-container ${isClicked ? "icon-exit" : "icon-enter"}`}>
           {isClicked ? <CloseRoundedIcon /> : <MenuOutlinedIcon />}
         </div>
+        
       </div>
+      
       <Navbar val={val} />
+      {isClicked && <SpeedDialExpansion isClicked={isClicked} />}
+      
     </div>
   );
 };

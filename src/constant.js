@@ -1,1 +1,1 @@
-export const purple= 'rgba(104,35,162,1)'
+export const purple = 'rgba(104,35,162,1)'
