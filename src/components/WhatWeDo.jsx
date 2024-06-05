@@ -2,7 +2,7 @@ import React from 'react'
 
 function WhatWeDo() {
   return (
-    <div>
+    <div id='whatWeDo'>
       what we do
     </div>
   )

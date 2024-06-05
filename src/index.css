@@ -2,19 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.icon-container {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .icon-enter {
-    transform: rotate(0deg);
-  }
-  
-  .icon-exit {
-    transform: rotate(180deg);
-  }
-  
+
   
 
 
@@ -49,3 +37,45 @@
 .absolute.flex.open > *:nth-child(5) {
   transition-delay: 0.5s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.icon-container {
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.icon-enter {
+  transform: rotate(0deg);
+}
+
+.icon-exit {
+  transform: rotate(180deg);
+}
+
+.backdrop-blur {
+  background-color: rgba(242, 232, 232, 0); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.relative {
+  position: relative;
+}
+
