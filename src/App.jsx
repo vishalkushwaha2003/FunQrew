@@ -32,12 +32,12 @@ const App = () => {
   return (
     <div className="relative">
       <div
-        className="top-0 pl-1 pt-1 z-10 absolute hover:cursor-pointer"
+        className="pt-3 pl-[2vw] z-10 absolute hover:cursor-pointer"
         onClick={handleClick}
         onMouseEnter={handleHover}
         onMouseLeave={handleHoverOut}
       >
-        <div className={`icon-container ${isClicked ? "icon-exit" : "icon-enter"}`}>
+        <div className={`icon-container  ${isClicked ? "icon-exit" : "icon-enter"}`}>
           {isClicked ? <CloseRoundedIcon /> : <MenuOutlinedIcon />}
         </div>
         
