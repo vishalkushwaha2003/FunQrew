@@ -65,7 +65,7 @@ const App = () => {
               </div>
             </div>
             <Navbar val={val} />
-            {isClicked && <SpeedDialExpansion isClicked={isClicked} />}
+            <SpeedDialExpansion isClicked={isClicked} />
           </div>
         </div>
       </div>
