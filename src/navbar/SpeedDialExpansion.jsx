@@ -7,36 +7,76 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 function SpeedDialExpansion() {
   const [isOpen, setIsOpen] = useState(false);
-  const [value, setValue] = useState(0);
+  const [clickedIcon, setClickedIcon] = useState(null);
 
   useEffect(() => {
     setIsOpen(true);
   }, []);
 
-  const handleClick = (e) => {};
+  const clickHandler = (value) => {
+    setClickedIcon(value);
+  };
 
   return (
     <div
-      onClick={handleClick}
-      className={`absolute bg-transparent flex flex-row items-center space-x-[10vw] top-3 right-[20vw] ${
+      className={`absolute text-white bg-transparent flex flex-row items-center  space-x-[10vw] top-[2vw] right-[20vw] ${
         isOpen ? "open" : ""
       }`}
     >
-     
-      <a href="#home">
-        <OtherHousesOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
+      <a
+        value='1'
+        onClick={() => clickHandler(1)}
+        href="#home"
+        className="animate__animated animate__fadeInRight"
+      >
+        <OtherHousesOutlinedIcon
+          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 1 ? 'text-violet-700 animate__bounceIn' : ''}`}
+        />
       </a>
-      <a href="#whatWeDo">
-        <HelpOutlineOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
+      <a
+        value='2'
+        onClick={() => clickHandler(2)}
+        href="#whatWeDo"
+        className="animate__animated animate__fadeInRight"
+      >
+        <HelpOutlineOutlinedIcon
+          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 2 ? 'text-violet-700 animate__bounceIn' : ''}`}
+        />
       </a>
-      <a href="#gallery">
-        <CollectionsOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
+      <a
+        value='3'
+        onClick={() => clickHandler(3)}
+        href="#gallery"
+        className="animate__animated animate__fadeInRight"
+      >
+        <CollectionsOutlinedIcon
+          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 3 ? 'text-violet-700 animate__bounceIn' : ''}`}
+        />
       </a>
-      <a href="#aboutUs">
-        <InfoOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
+      <a
+        value='4'
+        onClick={() => clickHandler(4)}
+        href="#aboutUs"
+        className="animate__animated animate__fadeInRight"
+      >
+       
+        <InfoOutlinedIcon
+          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 4 ? 'text-violet-700 animate__bounceIn' : ''}`}
+        />
+       
       </a>
-      <a href="#contact">
-        <AddIcCallOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
+      <a
+        value='5'
+        onClick={() => clickHandler(5)}
+        href="#contact"
+        className="animate__animated animate__fadeInRight"
+      >
+       
+        <AddIcCallOutlinedIcon
+          className={`hover:cursor-pointer  animate__animated  ${clickedIcon === 5 ? 'text-violet-700 animate__bounceIn' : ''}`}
+        />
+       
+        
       </a>
     </div>
   );
