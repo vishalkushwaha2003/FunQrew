@@ -49,7 +49,7 @@ const App = () => {
                 src={logo}
                 alt="logo"
                 className={`animate__animated ${
-                  islogoImageHovered ? "animate__heartBeat" : "animate__swing"
+                  islogoImageHovered ? "animate__headShake" : "animate__swing"
                 }  h-[5vw] w-[5vw] hover:cursor-pointer rounded-full`}
                 onMouseEnter={logoImageHoverHandle}
                 onMouseLeave={logoImageHoverHandle}

@@ -30,7 +30,7 @@ function SpeedDialExpansion({isClicked}) {
         className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
       >
         <OtherHousesOutlinedIcon
-          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 1 ? 'text-violet-700 animate__bounceIn' : ''}`}
+          className={`hover:cursor-pointer hover:text-violet-700 duration-100 animate__animated  ${clickedIcon === 1 ? 'text-violet-700 animate__bounceIn' : ''}`}
         />
       </a>
       <a
