@@ -24,19 +24,19 @@ function SpeedDialExpansion() {
     >
      
       <a href="#home">
-        <OtherHousesOutlinedIcon className="hover:cursor-pointer" />
+        <OtherHousesOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
       </a>
       <a href="#whatWeDo">
-        <HelpOutlineOutlinedIcon className="hover:cursor-pointer" />
+        <HelpOutlineOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
       </a>
       <a href="#gallery">
-        <CollectionsOutlinedIcon className="hover:cursor-pointer" />
+        <CollectionsOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
       </a>
       <a href="#aboutUs">
-        <InfoOutlinedIcon className="hover:cursor-pointer" />
+        <InfoOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
       </a>
       <a href="#contact">
-        <AddIcCallOutlinedIcon className="hover:cursor-pointer" />
+        <AddIcCallOutlinedIcon className="hover:cursor-pointer animate__animated animate__backInDown" />
       </a>
     </div>
   );

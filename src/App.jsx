@@ -79,6 +79,7 @@ const App = () => {
       </div>
 
       <div className="mt-[1200px]"></div>
+      <h1 class="animate__animated animate__bounce">An animated element</h1>
       <Home />
       <div className="mt-[1200px]"></div>
       <WhatWeDo />
