@@ -37,7 +37,7 @@ const App = () => {
       <div className="fixed top-[-1px] left-0 w-full z-20 glassy-effect">
         <div className="flex">
           <div className="flex items-center">
-            <div className="flex hover:cursor-pointer mt-3 space-x-2 items-center ml-6 z-40 h-[5vw] w-[12vw] min-h-10 min-w-10">
+            <div className="flex hover:cursor-pointer animate__rubberBand mt-3 space-x-2 items-center ml-6 z-40 h-[5vw] w-[12vw] min-h-10 min-w-10">
               <img
                 src={logo}
                 alt="logo"
