@@ -49,9 +49,9 @@
 
 
 
-.icon-container {
+/* Example CSS for icon-containerbg, icon-exit, and icon-enter */
+.icon-containerbg {
   transition: transform 0.3s ease-in-out;
-  
 }
 
 .icon-enter {
@@ -62,14 +62,12 @@
   transform: rotate(180deg);
 }
 
+
 .backdrop-blur {
-  background-color: rgba(242, 232, 232, 0); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  background-color: rgba(234, 225, 225, 0); /* Semi-transparent background */
+  backdrop-filter: blur(0); /* Adjust the blur amount as needed */
 }
-.logo{
-  background-color: rgba(242, 232, 232, 0);
-  backdrop-filter: blur(10px);
-}
+
 
 
 

@@ -10,6 +10,19 @@ import WhatWeDo from "./components/WhatWeDo.jsx";
 import Gallery from "./components/Gallery.jsx";
 import Contact from "./components/Contact.jsx";
 import logo from "./assets/logo.png";
+import styled from 'styled-components';
+
+const IconContainer = styled.div`
+  transition: transform 0.3s ease-in-out;
+
+  &.icon-enter {
+    transform: rotate(0deg);
+  }
+
+  &.icon-exit {
+    transform: rotate(180deg);
+  }
+`;
 
 const App = () => {
   const [val, setVal] = useState(0);
@@ -51,13 +64,13 @@ const App = () => {
               onMouseEnter={handleHover}
               onMouseLeave={handleHoverOut}
             >
-              <div
+              <IconContainer
                 className={`icon-containerbg ${
                   isClicked ? "icon-exit" : "icon-enter"
                 }`}
               >
                 {isClicked ? <CloseRoundedIcon /> : <MenuOutlinedIcon />}
-              </div>
+              </IconContainer>
             </div>
             <Navbar val={val} />
             {isClicked && <SpeedDialExpansion isClicked={isClicked} />}
