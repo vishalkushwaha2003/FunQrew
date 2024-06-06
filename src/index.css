@@ -15,7 +15,7 @@
 
 .absolute.flex.open > * {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(1vw);
 }
 
 .absolute.flex.open > *:nth-child(1) {
@@ -66,16 +66,12 @@
   background-color: rgba(242, 232, 232, 0); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
 }
-
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 20;
+.logo{
+  background-color: rgba(242, 232, 232, 0);
+  backdrop-filter: blur(10px);
 }
 
-.relative {
-  position: relative;
-}
+
+
+
 

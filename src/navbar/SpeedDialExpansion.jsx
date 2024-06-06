@@ -18,11 +18,11 @@ function SpeedDialExpansion() {
   return (
     <div
       onClick={handleClick}
-      className={`absolute bg-transparent flex flex-row  space-x-[10vw] top-3 left-[20vw] ${
+      className={`absolute bg-transparent flex flex-row items-center space-x-[10vw] top-3 right-[20vw] ${
         isOpen ? "open" : ""
       }`}
     >
-      {" "}
+     
       <a href="#home">
         <OtherHousesOutlinedIcon className="hover:cursor-pointer" />
       </a>
