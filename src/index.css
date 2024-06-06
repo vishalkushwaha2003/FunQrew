@@ -73,3 +73,58 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/* styles.css */
+@keyframes fadeInDownDrunk {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) rotate(-20deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.funqrew-text span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInDownDrunk 0.6s forwards;
+}
+
+.funqrew-text span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.funqrew-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.funqrew-text span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.funqrew-text span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.funqrew-text span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.funqrew-text span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.funqrew-text span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
