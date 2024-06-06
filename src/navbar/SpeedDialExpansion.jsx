@@ -30,7 +30,7 @@ function SpeedDialExpansion({isClicked}) {
         className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
       >
         <OtherHousesOutlinedIcon
-          className={`hover:cursor-pointer hover:text-violet-700 duration-100 animate__animated  ${clickedIcon === 1 ? 'text-violet-700 animate__bounceIn' : ''}`}
+          className={`hover:cursor-pointer   animate__animated  ${clickedIcon === 1 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
         />
       </a>
       <a
@@ -40,7 +40,7 @@ function SpeedDialExpansion({isClicked}) {
         className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
       >
         <HelpOutlineOutlinedIcon
-          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 2 ? 'text-violet-700 animate__bounceIn' : ''}`}
+          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 2 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
         />
       </a>
       <a
@@ -50,7 +50,7 @@ function SpeedDialExpansion({isClicked}) {
         className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
       >
         <CollectionsOutlinedIcon
-          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 3 ? 'text-violet-700 animate__bounceIn' : ''}`}
+          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 3 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
         />
       </a>
       <a
@@ -61,7 +61,7 @@ function SpeedDialExpansion({isClicked}) {
       >
        
         <InfoOutlinedIcon
-          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 4 ? 'text-violet-700 animate__bounceIn' : ''}`}
+          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 4 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
         />
        
       </a>
@@ -73,7 +73,7 @@ function SpeedDialExpansion({isClicked}) {
       >
        
         <AddIcCallOutlinedIcon
-          className={`hover:cursor-pointer  animate__animated  ${clickedIcon === 5 ? 'text-violet-700 animate__bounceIn' : ''}`}
+          className={`hover:cursor-pointer  animate__animated  ${clickedIcon === 5 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
         />
        
         
