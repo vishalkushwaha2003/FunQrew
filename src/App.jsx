@@ -14,7 +14,7 @@ const App = () => {
   const [val, setVal] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
   const [islogoImageHovered, setIslogoImageHovered] = useState(false);
-  const [islogoTextHovered, setIslogoTextHovered] = useState(false);
+  
 
   const handleClick = () => {
     setIsClicked((prev) => {
@@ -34,38 +34,32 @@ const App = () => {
     }
   };
 
-
   const logoImageHoverHandle = () => {
-    setIslogoImageHovered(pre=>!islogoImageHovered)
-    
+    setIslogoImageHovered((pre) => !islogoImageHovered);
   };
-  const logoTextHoverHandle = () => {
-    setIslogoTextHovered(pre=>!islogoTextHovered)
-  };
+ 
 
   return (
     <div className="relative">
       <div className="fixed top-[-1px] left-0 w-full z-20 glassy-effect">
         <div className="flex">
           <div className="flex items-center">
-            <div className="flex  animate__rubberBand mt-3 space-x-2 items-center ml-6 z-40 h-[5vw] w-[12vw] min-h-10 min-w-10"
-             
-            >
+            <div className="flex  mt-3 space-x-2 items-center ml-6 z-40 h-[5vw] w-[12vw] min-h-10 min-w-10">
               <img
                 src={logo}
                 alt="logo"
-                className={`animate__animated ${islogoImageHovered?'animate__rubberBand' : 'animate__swing'}  h-[5vw] w-[5vw] hover:cursor-pointer rounded-full`}
+                className={`animate__animated ${
+                  islogoImageHovered ? "animate__heartBeat" : "animate__swing"
+                }  h-[5vw] w-[5vw] hover:cursor-pointer rounded-full`}
                 onMouseEnter={logoImageHoverHandle}
                 onMouseLeave={logoImageHoverHandle}
               />
-              <div className={`funqrew-text font-bold  text-[1.5vw] hover:cursor-pointer text-[rgba(104,35,162,1)]`}
-              
-              onMouseEnter={logoTextHoverHandle}
-              onMouseLeave={logoTextHoverHandle}
+              <div
+                className={`funqrew-text font-bold  w-[10vw] min-w-14 hover:cursor-pointer text-[rgba(104,35,162,1)]`}
+                
               >
-                 
                 {"FunQrew".split("").map((char, index) => (
-                  <span key={index}>{char}</span>
+                  <span key={index} className="text-[1.5vw] ">{char}</span>
                 ))}
               </div>
             </div>

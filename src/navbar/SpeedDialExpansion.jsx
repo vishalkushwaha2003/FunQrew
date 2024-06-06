@@ -8,7 +8,7 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 function SpeedDialExpansion({isClicked}) {
   const [isOpen, setIsOpen] = useState(false);
   const [clickedIcon, setClickedIcon] = useState(null);
-console.log(isClicked)
+
   useEffect(() => {
     setIsOpen(true);
   }, []);
