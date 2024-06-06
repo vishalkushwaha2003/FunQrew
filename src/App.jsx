@@ -9,6 +9,7 @@ import Home from "./components/Home.jsx";
 import WhatWeDo from "./components/WhatWeDo.jsx";
 import Gallery from "./components/Gallery.jsx";
 import Contact from "./components/Contact.jsx";
+import logo from './assets/logo.png';
 
 const App = () => {
   const [val, setVal] = useState(0);
@@ -35,8 +36,13 @@ const App = () => {
   return (
     <div>
       <div className="fixed top-0 left-0 w-full z-20 glassy-effect">
+        <div className="absolute z-40 bg-transparent h-20 w-20 rounded-full">
+          <img src={logo} alt="logo" />
+        </div>
+
+
         <div
-          className="absolute pt-3 pl-[2vw] hover:cursor-pointer z-30"
+          className="absolute pt-3 right-[2vw] hover:cursor-pointer z-30"
           onClick={handleClick}
           onMouseEnter={handleHover}
           onMouseLeave={handleHoverOut}

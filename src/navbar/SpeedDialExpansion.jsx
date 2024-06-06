@@ -18,7 +18,7 @@ function SpeedDialExpansion() {
   return (
     <div
       onClick={handleClick}
-      className={`absolute bg-transparent flex flex-row space-x-[10vw] top-3 left-[10vw] ${
+      className={`absolute bg-transparent flex flex-row  space-x-[10vw] top-3 left-[20vw] ${
         isOpen ? "open" : ""
       }`}
     >
