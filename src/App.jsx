@@ -51,7 +51,7 @@ const App = () => {
       <div className="fixed top-[-1px] left-0 w-full z-20 glassy-effect">
         <div className="flex  ">
           <div className="flex  items-center ">
-            <div className=" flex justify-center pt-3  pl-3 space-x-2 items-center ml-10  z-40  h-[6vw] w-[6vw] min-h-10 min-w-10">
+            <div className=" flex justify-center pt-3  pl-3 space-x-2 items-center ml-10  z-40  h-[6vw] w-[6vw] min-h-10 min-w-10 animate__animated animate__swing">
               <img src={logo} alt="logo" className="h-[5vw] w-[5vw]  rounded-full" />
               <div className=" z-40   font-bold  text-[1.5vw] md:text-[15px]  text-[rgba(104,35,162,1)]">
                 FunQrew
