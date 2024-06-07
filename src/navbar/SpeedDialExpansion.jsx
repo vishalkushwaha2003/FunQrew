@@ -27,12 +27,12 @@ function SpeedDialExpansion({ isClicked }) {
         value='1'
         onClick={() => clickHandler(1)}
         href="#home"
-        className={`flex flex-col items-center animate__animated ${isClicked ? 'animate__fadeInRight' : 'animate__fadeOutRight'} animate__faster hover:text-violet-500 transition-transform transform hover:scale-110`}
+        className={`flex flex-col items-center hover:scale-125 animate__animated ${isClicked ? 'animate__fadeInRight' : 'animate__fadeOutRight'} animate__faster hover:text-violet-500 transition-transform transform hover:scale-110`}
       >
         <OtherHousesOutlinedIcon
           className={`hover:cursor-pointer animate__animated ${clickedIcon === 1 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
-        <div className={`animate__animated ${clickedIcon === 1 ? 'text-violet-800 animate__rubberBand' : ''}`}>Home</div>
+        <div className={`animate__animated ${clickedIcon === 1 ? 'text-violet-800 animate__rubberBand' : ''} text-sm `}>Home</div>
       </a>
       <a
         value='2'
@@ -43,7 +43,7 @@ function SpeedDialExpansion({ isClicked }) {
         <HelpOutlineOutlinedIcon
           className={`hover:cursor-pointer animate__animated ${clickedIcon === 2 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
-        <div className={`animate__animated ${clickedIcon === 2 ? 'text-violet-800 animate__rubberBand' : ''}`}>What We Do</div>
+        <div className={`animate__animated ${clickedIcon === 2 ? 'text-violet-800 animate__rubberBand' : ''} text-sm`}>What We Do</div>
       </a>
       <a
         value='3'
@@ -54,7 +54,7 @@ function SpeedDialExpansion({ isClicked }) {
         <CollectionsOutlinedIcon
           className={`hover:cursor-pointer animate__animated ${clickedIcon === 3 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
-        <div className={`animate__animated ${clickedIcon === 3? 'text-violet-800 animate__rubberBand' : ''}`}>Gallery</div>
+        <div className={`animate__animated ${clickedIcon === 3? 'text-violet-800 animate__rubberBand' : ''} text-sm`}>Gallery</div>
       </a>
       <a
         value='4'
@@ -65,7 +65,7 @@ function SpeedDialExpansion({ isClicked }) {
         <InfoOutlinedIcon
           className={`hover:cursor-pointer animate__animated ${clickedIcon === 4 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
-        <div className={`animate__animated ${clickedIcon === 4 ? 'text-violet-800 animate__rubberBand' : ''}`}>About Us</div>
+        <div className={`animate__animated ${clickedIcon === 4 ? 'text-violet-800 animate__rubberBand' : ''} text-sm`}>About Us</div>
       </a>
       <a
         value='5'
@@ -76,7 +76,7 @@ function SpeedDialExpansion({ isClicked }) {
         <AddIcCallOutlinedIcon
           className={`hover:cursor-pointer animate__animated ${clickedIcon === 5 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
-        <div className={`animate__animated ${clickedIcon === 5 ? 'text-violet-800 animate__rubberBand' : ''}`}>Contact</div>
+        <div className={`animate__animated ${clickedIcon === 5 ? 'text-violet-800 animate__rubberBand' : ''} text-sm`}>Contact</div>
       </a>
     </div>
   );
