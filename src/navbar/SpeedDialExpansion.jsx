@@ -19,7 +19,7 @@ function SpeedDialExpansion({ isClicked }) {
 
   return (
     <div
-      className={`absolute text-white flex flex-row items-center space-x-[6vw] top-[1.5vw] right-[20vw] ${
+      className={`absolute text-white grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 top-[1.5vw] right-[20vw] ${
         isOpen ? "open" : ""
       }`}
     >
