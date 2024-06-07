@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import 'animate.css';
 import g1 from '../assets/galleryPhoto/g1.jpg';
 import g2 from '../assets/galleryPhoto/g2.jpg';
 import g3 from '../assets/galleryPhoto/g3.jpg';
@@ -55,19 +56,65 @@ const images = [
   { src: g26, label: 'VR', span: 'h-48 md:h-80' },
 ];
 
+const animations = [
+  'animate__fadeInDown',
+  'animate__fadeInLeft',
+  'animate__fadeInRight',
+  'animate__fadeInUp',
+  'animate__fadeInTopLeft',
+  'animate__fadeInTopRight',
+  'animate__fadeInBottomLeft',
+  'animate__fadeInBottomRight'
+];
+
+function getRandomAnimation() {
+  const randomIndex = Math.floor(Math.random() * animations.length);
+  return animations[randomIndex];
+}
+
 function Gallery() {
+  const galleryRef = useRef(null);
+
+  useEffect(() => {
+    const galleryElements = galleryRef.current.querySelectorAll('.gallery-item');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const animationClass = getRandomAnimation();
+            entry.target.classList.add('animate__animated', animationClass);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    galleryElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      if (observer) {
+        observer.disconnect();
+      }
+    };
+  }, []);
+
   return (
     <div id='gallery'>
-      <div className="bg-white dark:bg-gray-800 h-screen py-6 sm:py-8 lg:py-12">
+      <div className="dark:bg-gray-800 h-full py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
             <div className="flex items-center gap-12">
               <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">Gallery</h2>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+          <div ref={galleryRef} className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
             {images.map((image, index) => (
-              <div key={index} className={`group relative flex items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg ${image.span}`}>
+              <div key={index} className={`gallery-item group relative flex items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg ${image.span}`}>
                 <img src={image.src} alt={`Gallery image ${index + 1}`} className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
                 <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">{image.label}</span>
