@@ -5,7 +5,7 @@ import CollectionsOutlinedIcon from "@mui/icons-material/CollectionsOutlined";
 import AddIcCallOutlinedIcon from "@mui/icons-material/AddIcCallOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-function SpeedDialExpansion({isClicked}) {
+function SpeedDialExpansion({ isClicked }) {
   const [isOpen, setIsOpen] = useState(false);
   const [clickedIcon, setClickedIcon] = useState(null);
 
@@ -19,7 +19,7 @@ function SpeedDialExpansion({isClicked}) {
 
   return (
     <div
-      className={`absolute text-white bg-transparent flex flex-row items-center  space-x-[10vw] top-[2vw] right-[20vw] ${
+      className={`absolute text-white flex flex-row items-center space-x-[6vw] top-[1.5vw] right-[20vw] ${
         isOpen ? "open" : ""
       }`}
     >
@@ -27,56 +27,56 @@ function SpeedDialExpansion({isClicked}) {
         value='1'
         onClick={() => clickHandler(1)}
         href="#home"
-        className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
+        className={`flex flex-col items-center animate__animated ${isClicked ? 'animate__fadeInRight' : 'animate__fadeOutRight'} animate__faster hover:text-violet-500 transition-transform transform hover:scale-110`}
       >
         <OtherHousesOutlinedIcon
-          className={`hover:cursor-pointer   animate__animated  ${clickedIcon === 1 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
+          className={`hover:cursor-pointer animate__animated ${clickedIcon === 1 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
+        <div className={`animate__animated ${clickedIcon === 1 ? 'text-violet-800 animate__rubberBand' : ''}`}>Home</div>
       </a>
       <a
         value='2'
         onClick={() => clickHandler(2)}
         href="#whatWeDo"
-        className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
+        className={`flex flex-col items-center animate__animated ${isClicked ? 'animate__fadeInRight' : 'animate__fadeOutRight'} animate__faster hover:text-violet-500 transition-transform transform hover:scale-110`}
       >
         <HelpOutlineOutlinedIcon
-          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 2 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
+          className={`hover:cursor-pointer animate__animated ${clickedIcon === 2 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
+        <div className={`animate__animated ${clickedIcon === 2 ? 'text-violet-800 animate__rubberBand' : ''}`}>What We Do</div>
       </a>
       <a
         value='3'
         onClick={() => clickHandler(3)}
         href="#gallery"
-        className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
+        className={`flex flex-col items-center animate__animated ${isClicked ? 'animate__fadeInRight' : 'animate__fadeOutRight'} animate__faster hover:text-violet-500 transition-transform transform hover:scale-110`}
       >
         <CollectionsOutlinedIcon
-          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 3 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
+          className={`hover:cursor-pointer animate__animated ${clickedIcon === 3 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
+        <div className={`animate__animated ${clickedIcon === 3? 'text-violet-800 animate__rubberBand' : ''}`}>Gallery</div>
       </a>
       <a
         value='4'
         onClick={() => clickHandler(4)}
         href="#aboutUs"
-        className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster `}
+        className={`flex flex-col items-center animate__animated ${isClicked ? 'animate__fadeInRight' : 'animate__fadeOutRight'} animate__faster hover:text-violet-500 transition-transform transform hover:scale-110`}
       >
-       
         <InfoOutlinedIcon
-          className={`hover:cursor-pointer animate__animated  ${clickedIcon === 4 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
+          className={`hover:cursor-pointer animate__animated ${clickedIcon === 4 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
-       
+        <div className={`animate__animated ${clickedIcon === 4 ? 'text-violet-800 animate__rubberBand' : ''}`}>About Us</div>
       </a>
       <a
         value='5'
         onClick={() => clickHandler(5)}
         href="#contact"
-        className={`animate__animated ${isClicked?'animate__fadeInRight ':'animate__fadeOutRight '} animate__faster`}
+        className={`flex flex-col items-center justify-center animate__animated ${isClicked ? 'animate__fadeInRight' : 'animate__fadeOutRight'} animate__faster hover:text-violet-500 transition-transform transform hover:scale-110`}
       >
-       
         <AddIcCallOutlinedIcon
-          className={`hover:cursor-pointer  animate__animated  ${clickedIcon === 5 ? 'text-violet-800 animate__bounceIn' : 'hover:text-violet-500'}`}
+          className={`hover:cursor-pointer animate__animated ${clickedIcon === 5 ? 'text-violet-800 animate__bounceIn' : ''}`}
         />
-       
-        
+        <div className={`animate__animated ${clickedIcon === 5 ? 'text-violet-800 animate__rubberBand' : ''}`}>Contact</div>
       </a>
     </div>
   );
