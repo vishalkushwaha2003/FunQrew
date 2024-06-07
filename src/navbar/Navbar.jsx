@@ -1,12 +1,32 @@
-import React from "react";
-import { purple } from "../constant.js";
+import React, { useState } from "react";
+import Hamberger from "./Hamberger.jsx";
+import Logo from "./Logo.jsx";
+import NavbarBg from "./NavbarBg.jsx";
+import SpeedDialExpansion from "./SpeedDialExpansion.jsx";
 
-function Navbar({ val }) {
+function Navbar() {
+  const [valChange, setValChange] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
+
+  const onValChange = (comingVal) => {
+    setValChange(comingVal);
+  };
+
+  const onIsClicked = (comingIsClicked) => {
+    setIsClicked(comingIsClicked);
+  };
+
   return (
-    <div
-      className={`w-[100%] absolute h-20 min-h-10 min-w-50 bg-gradient-to-r from-[rgba(104,35,162,0)] to-[rgba(104,35,162,0.4)] transition-opacity duration-[1s]`}
-      style={{ opacity: val / 100, backdropFilter: 'blur(7px)' }}
-    ></div>
+    <div className="fixed top-[-1px] left-0 w-full z-20 glassy-effect">
+      <div className="flex">
+        <div className="flex items-center">
+          <Logo />
+          <Hamberger onValChange={onValChange} onIsClicked={onIsClicked} />
+          <NavbarBg valChange={valChange} />
+          <SpeedDialExpansion isClicked={isClicked} />
+        </div>
+      </div>
+    </div>
   );
 }
 
