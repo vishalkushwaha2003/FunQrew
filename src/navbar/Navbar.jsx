@@ -17,16 +17,17 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed top-[-1px] left-0 w-full z-20 glassy-effect">
-      <div className="flex">
-        <div className="flex items-center">
+    <div className="fixed flex justify-between w-screen items-center pr-10 top-0 z-30 glassy-effect">
+      
+        
           <Logo />
-          <Hamberger onValChange={onValChange} onIsClicked={onIsClicked} />
+          
           <NavbarBg valChange={valChange} />
           <SpeedDialExpansion isClicked={isClicked} />
+          <Hamberger onValChange={onValChange} onIsClicked={onIsClicked} />
         </div>
-      </div>
-    </div>
+    
+    
   );
 }
 

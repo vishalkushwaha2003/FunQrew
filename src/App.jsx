@@ -9,7 +9,7 @@ import Navbar from "./navbar/Navbar.jsx";
 
 const App = () => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <Navbar />
       <div className="mt-[1200px]"></div>
       <h1 className="animate__animated animate__bounce">An animated element</h1>
