@@ -39,7 +39,7 @@ function Hamberger({ onValChange, onIsClicked }) {
 
   return (
     <div
-      className=" right-[2vw] hover:cursor-pointer z-30"
+      className=" xl:right-5 hover:cursor-pointer z-30"
       onClick={handleClick}
       onMouseEnter={handleHover}
       onMouseLeave={handleHoverOut}

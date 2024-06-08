@@ -35,7 +35,7 @@ function SpeedDialExpansion({ isClicked }) {
     >
       <div 
         style={{ backdropFilter: `${isSmallScreen?'blur(4px)':''}`}}
-        className={`text-white flex ${isSmallScreen ? "flex-col items-center w-14 rounded-xl h-60 justify-evenly " : "flex-row items-end "} justify-center gap-3 animate__animated ${isClicked?"animate__fadeInRight" : "animate__fadeOutRight"} sm:gap-5 md:gap-6 lg:gap-10 ${isSmallScreen ? "mt-4 bg-[rgba(138,92,246,0.1)] " : "ml-16 sm:ml-24 md:ml-24 lg:ml-40  "}`}
+        className={`text-white flex ${isSmallScreen ? "flex-col items-center w-14 rounded-xl h-60 justify-evenly " : "flex-row items-end "} justify-center gap-3 ${isSmallScreen?'animate__animated':''}     ${isClicked ?"animate__fadeInRight" : "animate__fadeOutRight"} sm:gap-5 md:gap-6 lg:gap-10 ${isSmallScreen ? "mt-4 bg-[rgba(138,92,246,0.1)] " : "ml-16 sm:ml-24 md:ml-24 lg:ml-40  "}`}
       >
         {icons.map(({ icon: Icon, label, href, value }) => (
           <a
