@@ -9,7 +9,7 @@ function Logo() {
   };
 
   return (
-    <div className="flex mt-1 sm:mt-2 md:mt-3   lg:mt-5  space-x-1 sm:space-x-1 md:space-x-2 lg:space-x-2 items-center  ml-6 z-40 w-28 h-12   sm:w-36 md:w-40 lg:w-48 ">
+    <div className="flex mt-1 sm:mt-2 md:mt-3   lg:mt-5  space-x-1 sm:space-x-1 md:space-x-2 lg:space-x-2 items-center  xl:ml-6 lg:ml-5 md:ml-4 sm:ml-3 ml-2 z-40 w-28 h-12   sm:w-36 md:w-40 lg:w-48 ">
       <img
         src={logo}
         alt="logo"
