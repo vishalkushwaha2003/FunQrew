@@ -31,10 +31,11 @@ function SpeedDialExpansion({ isClicked }) {
 
   return (
     <div
-      className={`absolute ${isSmallScreen ? "top-[5vw] right-4" : "w-screen pt-[1vw]"} flex ${isSmallScreen ? "flex-col h-80 bg-green-500  " : "flex-row"} justify-evenly items-center h-12 sm:h-14 md:h-16 lg:h-20`}
+      className={`absolute ${isSmallScreen ? "top-[5vw] right-4" : "w-screen pt-[1vw]"} flex ${isSmallScreen ? "flex-col h-72   " : "flex-row"} justify-evenly items-center h-12 sm:h-14 md:h-16 lg:h-20`}
     >
-      <div
-        className={`text-white flex ${isSmallScreen ? "flex-col items-center w-14 rounded-xl h-60 gap-5" : "flex-row items-end "} justify-center gap-3 animate__animated ${isClicked?"animate__fadeInRight" : "animate__fadeOutRight"} sm:gap-5 md:gap-6 lg:gap-10 ${isSmallScreen ? "mt-4  bg-red-600" : "ml-16 sm:ml-24 md:ml-24 lg:ml-40  "}`}
+      <div 
+        style={{ backdropFilter: `${isSmallScreen?'blur(4px)':''}`}}
+        className={`text-white flex ${isSmallScreen ? "flex-col items-center w-14 rounded-xl h-60 justify-evenly " : "flex-row items-end "} justify-center gap-3 animate__animated ${isClicked?"animate__fadeInRight" : "animate__fadeOutRight"} sm:gap-5 md:gap-6 lg:gap-10 ${isSmallScreen ? "mt-4 bg-[rgba(138,92,246,0.1)] " : "ml-16 sm:ml-24 md:ml-24 lg:ml-40  "}`}
       >
         {icons.map(({ icon: Icon, label, href, value }) => (
           <a
