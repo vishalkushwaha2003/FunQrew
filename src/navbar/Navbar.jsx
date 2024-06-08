@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed  flex justify-between w-screen items-center pr-10 top-[-2px] z-30 glassy-effect">
+    <div className="fixed  flex justify-between w-screen items-center xl:pr-12 lg:pr-11 md:pr-10 sm:pr-8 pr-7 top-[-2px] z-30 glassy-effect">
       
         
           <Logo />
