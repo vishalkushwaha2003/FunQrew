@@ -9,7 +9,7 @@ function Logo() {
   };
 
   return (
-    <div className="flex mt-1 sm:mt-2 md:mt-3   lg:mt-5  space-x-1 sm:space-x-1 md:space-x-2 lg:space-x-2 items-center bg-green-500 ml-6 z-40 w-28 h-12   sm:w-36 md:w-40 lg:w-48 ">
+    <div className="flex mt-1 sm:mt-2 md:mt-3   lg:mt-5  space-x-1 sm:space-x-1 md:space-x-2 lg:space-x-2 items-center  ml-6 z-40 w-28 h-12   sm:w-36 md:w-40 lg:w-48 ">
       <img
         src={logo}
         alt="logo"
@@ -20,7 +20,7 @@ function Logo() {
         onMouseLeave={logoImageHoverHandle}
       />
       <div
-        className={`funqrew-text font-bold w-16 sm:w-20  md:w-24 bg-red-500 lg:w-28 hover:cursor-pointer text-[rgba(104,35,162,1)]`}
+        className={`funqrew-text font-bold w-16 sm:w-20  md:w-24  lg:w-28 hover:cursor-pointer text-[rgba(104,35,162,1)]`}
       >
         {"FunQrew".split("").map((char, index) => (
           <span key={index} className=" text-sm sm:text-base md:text-xl lg:text-2xl">
