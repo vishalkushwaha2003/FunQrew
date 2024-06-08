@@ -4,11 +4,14 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import CollectionsOutlinedIcon from "@mui/icons-material/CollectionsOutlined";
 import AddIcCallOutlinedIcon from "@mui/icons-material/AddIcCallOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 function SpeedDialExpansion({ isClicked }) {
   const [isOpen, setIsOpen] = useState(false);
   const [clickedIcon, setClickedIcon] = useState(null);
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  
 
   useEffect(() => {
     setIsOpen(true);
@@ -18,16 +21,22 @@ function SpeedDialExpansion({ isClicked }) {
     setClickedIcon(value);
   };
 
+  const icons = [
+    { icon: OtherHousesOutlinedIcon, label: "Home", href: "#home", value: 1 },
+    { icon: HelpOutlineOutlinedIcon, label: "What We Do", href: "#whatWeDo", value: 2 },
+    { icon: CollectionsOutlinedIcon, label: "Gallery", href: "#gallery", value: 3 },
+    { icon: InfoOutlinedIcon, label: "About Us", href: "#aboutUs", value: 4 },
+    { icon: AddIcCallOutlinedIcon, label: "Contact", href: "#contact", value: 5 },
+  ];
+
   return (
-    <div className="w-screen absolute pt-[1vw] flex justify-evenly items-center h-12 sm:h-14 md:h-16 lg:h-20">
-      <div className="text-white flex justify-center items-end gap-3 sm:gap-5 md:gap-6 lg:gap-10 ml-16 sm:ml-24 md:ml-24 lg:ml-40">
-        {[
-          { icon: OtherHousesOutlinedIcon, label: "Home", href: "#home", value: 1 },
-          { icon: HelpOutlineOutlinedIcon, label: "What We Do", href: "#whatWeDo", value: 2 },
-          { icon: CollectionsOutlinedIcon, label: "Gallery", href: "#gallery", value: 3 },
-          { icon: InfoOutlinedIcon, label: "About Us", href: "#aboutUs", value: 4 },
-          { icon: AddIcCallOutlinedIcon, label: "Contact", href: "#contact", value: 5 },
-        ].map(({ icon: Icon, label, href, value }) => (
+    <div
+      className={`absolute ${isSmallScreen ? "top-[5vw] right-4" : "w-screen pt-[1vw]"} flex ${isSmallScreen ? "flex-col h-80 bg-green-500  " : "flex-row"} justify-evenly items-center h-12 sm:h-14 md:h-16 lg:h-20`}
+    >
+      <div
+        className={`text-white flex ${isSmallScreen ? "flex-col items-center w-14 rounded-xl h-60 gap-5" : "flex-row items-end "} justify-center gap-3 animate__animated ${isClicked?"animate__fadeInRight" : "animate__fadeOutRight"} sm:gap-5 md:gap-6 lg:gap-10 ${isSmallScreen ? "mt-4  bg-red-600" : "ml-16 sm:ml-24 md:ml-24 lg:ml-40  "}`}
+      >
+        {icons.map(({ icon: Icon, label, href, value }) => (
           <a
             key={value}
             onClick={() => clickHandler(value)}
@@ -39,7 +48,7 @@ function SpeedDialExpansion({ isClicked }) {
             <Box
               component={Icon}
               sx={{
-                fontSize: {
+                fontSize: isSmallScreen ? 'x-large' : {
                   xs: 'small', // Small size for extra small screens
                   sm: 'medium', // Medium size for small screens
                   md: 'large', // Large size for medium screens
@@ -55,13 +64,15 @@ function SpeedDialExpansion({ isClicked }) {
                 }),
               }}
             />
-            <div
-              className={`animate__animated ${
-                clickedIcon === value ? "text-violet-800 animate__rubberBand" : ""
-              } text-xs sm:text-xs md:sm lg:text-base xl:text-lg`}
-            >
-              {label}
-            </div>
+            {!isSmallScreen && (
+              <div
+                className={`animate__animated ${
+                  clickedIcon === value ? "text-violet-800 animate__rubberBand" : ""
+                } text-xs sm:text-xs md:sm lg:text-base xl:text-lg`}
+              >
+                {label}
+              </div>
+            )}
           </a>
         ))}
       </div>
