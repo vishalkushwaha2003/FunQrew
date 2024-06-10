@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import  { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 // Make sure to import the loadSlim function from the correct package
 import { loadSlim } from "@tsparticles/slim";
@@ -39,7 +39,7 @@ const HomeBgParticles = () => {
 
             background: {
               color: {
-                value: "#150a29",
+                value: "none",
               },
             },
 

@@ -129,3 +129,61 @@
 
 
 
+
+
+
+
+.slideshow-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  overflow: hidden; /* Keep overflow hidden to avoid showing the images outside the container */
+}
+
+.slideshow-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  animation: fadeZoom 18s infinite; /* Total duration is 9 seconds, as we have 3 images with 3s each */
+}
+
+.slideshow-image:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slideshow-image:nth-child(2) {
+  animation-delay: 6s;
+}
+
+.slideshow-image:nth-child(3) {
+  animation-delay: 12s;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  43.33% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
