@@ -4,8 +4,8 @@ import WhatWeDoCard from "./WhatWeDoCard";
 function WhatWeDo() {
   return (
     <div id="whatWeDo">
-      <div>
-        <div>
+      <div className="relative">
+        <div >
           <h1 className="text-5xl text-center font-bold" id="whatWeDo">
             WHAT WE DO
           </h1>

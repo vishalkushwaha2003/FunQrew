@@ -5,7 +5,7 @@ import HomeBgParticles from './HomeBgParticles'
 function Home() {
   return (
     <div id='home'>
-    
+    hii
       <HomeBgParticles/>
     </div>
   )
