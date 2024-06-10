@@ -34,7 +34,7 @@ function AboutUs() {
   }, []);
 
   return (
-    <div ref={aboutUsRef}>
+    <div ref={aboutUsRef} id="aboutUs">
       <div className="relative">
         <div>
           <h1 className="text-5xl text-center font-bold" id="aboutUs">
