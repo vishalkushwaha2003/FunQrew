@@ -4,7 +4,13 @@ import HomeBgParticles from "./HomeBgParticles";
 function Home() {
   return (
     <div id="home">
-      hii
+      <div className="absolute">
+          
+          <div>
+            <img src="" alt="" />
+          </div>
+
+      </div>
       <HomeBgParticles />
     </div>
   );
