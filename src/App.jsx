@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import AboutUs from "./components/AboutUs.jsx";
 import Home from "./components/Home.jsx";
 import WhatWeDo from "./components/WhatWeDo.jsx";
