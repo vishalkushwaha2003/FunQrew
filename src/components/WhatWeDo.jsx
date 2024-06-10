@@ -6,7 +6,7 @@ function WhatWeDo() {
     <div id="whatWeDo">
       <div>
         <div>
-          <h1 className="text-5xl text-center font-bold" id="aboutUs">
+          <h1 className="text-5xl text-center font-bold" id="whatWeDo">
             WHAT WE DO
           </h1>
         </div>
