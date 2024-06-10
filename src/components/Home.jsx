@@ -1,9 +1,12 @@
 import React from 'react'
+import HomeBgParticles from './HomeBgParticles'
+
 
 function Home() {
   return (
     <div id='home'>
-      home 
+    
+      <HomeBgParticles/>
     </div>
   )
 }
