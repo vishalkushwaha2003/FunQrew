@@ -9,18 +9,15 @@ const App = () => {
   return (
     <div className="relative  ">
       <Navbar />
-      <div className="mt-[1200px]"></div>
-      <h1 className="animate__animated animate__bounce">An animated element</h1>
-      <Home />
-      <div className="mt-[1200px]"></div>
+      
+       <div className="h-screen w-screen"> 
+         <Home />
+         </div>
+     
       <WhatWeDo />
-      <div className="mt-[1200px]"></div>
       <Gallery />
-      <div className="mt-[1200px]"></div>
       <AboutUs />
-      <div className="mt-[1200px]"></div>
       <Contact />
-      <div className="mt-[1200px]"></div>
     </div>
   );
 };

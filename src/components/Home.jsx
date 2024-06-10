@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import HomeBgParticles from "./HomeBgParticles";
 
 function Home() {
   return (
-    <div id='home'>
-      home 
+    <div id="home">
+      hii
+      <HomeBgParticles />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

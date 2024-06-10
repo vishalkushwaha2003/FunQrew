@@ -6,7 +6,6 @@ import brand from "../assets/whatwedophoto/brand.png";
 import social from "../assets/whatwedophoto/SocialMediaManagement.png";
 
 import Tilt from "react-parallax-tilt";
-import root from "react-shadow";
 
 const WhatWeDoCard = () => {
   const [isInView, setIsInView] = useState(false);
