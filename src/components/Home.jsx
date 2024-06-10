@@ -2,7 +2,12 @@ import React from "react";
 import HomeBgParticles from "./HomeBgParticles";
 
 function Home() {
-  return <div id="home">{/* <HomeBgParticles/> */}</div>;
+  return (
+    <div id="home">
+      hii
+      <HomeBgParticles />
+    </div>
+  );
 }
 
 export default Home;
