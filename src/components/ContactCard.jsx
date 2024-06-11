@@ -6,6 +6,7 @@ import { TextField } from "@mui/material";
 import { styled } from "@mui/system";
 
 import Tilt from "react-parallax-tilt";
+import { useState, useRef, useEffect } from "react";
 
 const CustomTextField = styled(TextField)(({ theme }) => ({
   "& .MuiOutlinedInput-root": {
@@ -34,8 +35,35 @@ const CustomTextField = styled(TextField)(({ theme }) => ({
 }));
 
 const ContactCard = () => {
+  const [isInView, setIsInView] = useState(false);
+  const contactRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect(); // Disconnect after the first trigger if you don't want repeated animations
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the section is visible
+      }
+    );
+
+    if (contactRef.current) {
+      observer.observe(contactRef.current);
+    }
+
+    return () => {
+      if (contactRef.current) {
+        observer.unobserve(contactRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="relative flex justify-center">
+    <div ref={contactRef} className="relative flex justify-center">
       <div className="w-[45rem] h-[30rem] bg-purple-200 text-black">
         <div className="mt-8 ml-64">
           <h1 className="text-3xl font-bold">Get In Touch</h1>
@@ -76,7 +104,11 @@ const ContactCard = () => {
 
       <div className="absolute top-6 left-72">
         <Tilt>
-          <div className=" h-[24rem] w-[19rem] bg-purple-700 animate__animated animate__flipInY hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl text-white">
+          <div
+            className={`h-[24rem] w-[19rem] bg-purple-700 ${
+              isInView ? "animate__animated animate__flipInY" : ""
+            } hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl text-white`}
+          >
             <div className="flex justify-center mt-8">
               <h1 className="text-3xl font-bold pt-4">Contact Us</h1>
             </div>
