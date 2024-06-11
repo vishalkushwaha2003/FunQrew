@@ -9,15 +9,24 @@ const App = () => {
   return (
     <div className="relative  ">
       <Navbar />
-      
-       <div className="h-screen w-screen"> 
-         <Home />
-         </div>
-     
-      <WhatWeDo />
+
+      <div className="h-screen w-screen">
+        <Home />
+      </div>
+
+      <div className="pt-20 pb-28 bg-violet-300">
+        <WhatWeDo />
+      </div>
+
       <Gallery />
-      <AboutUs />
-      <Contact />
+
+      <div className="pt-14 pb-40 bg-violet-300">
+        <AboutUs />
+      </div>
+
+      <div className="pt-14 pb-24 bg-violet-400">
+        <Contact />
+      </div>
     </div>
   );
 };

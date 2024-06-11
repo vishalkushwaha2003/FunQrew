@@ -34,106 +34,106 @@ function AboutUs() {
   }, []);
 
   return (
-    <div ref={aboutUsRef} id="aboutUs">
-      <div className="relative">
-        <div>
-          <h1 className="text-5xl text-center font-bold" id="aboutUs">
-            ABOUT US
-          </h1>
+    <div id="aboutUs">
+      <div ref={aboutUsRef}>
+        <div className="relative">
+          <div>
+            <h1 className="text-5xl text-center mt-32 font-bold">ABOUT US</h1>
 
-          <div className="flex ml-20 mt-24">
-            <div className="w-1/2 ml-10">
-              <div className="relative mb-6">
-                <div
-                  className={`text-2xl flex font-semibold ${
-                    isInView ? "animate__animated animate__bounceIn" : ""
-                  }`}
-                >
-                  <div className="w-14 h-14 left-[-12px] top-0 absolute bg-[rgba(104,35,162,0.7)] rounded-full flex items-center justify-center">
-                    <div
-                      className={`${
-                        isInView
-                          ? "animate__animated animate__bounceInDown"
-                          : ""
-                      }`}
-                    >
-                      <MilitaryTechOutlinedIcon fontSize="large" />
+            <div className="flex ml-20 mt-24">
+              <div className="w-1/2 ml-10">
+                <div className="relative mb-6">
+                  <div
+                    className={`text-2xl flex font-semibold ${
+                      isInView ? "animate__animated animate__bounceIn" : ""
+                    }`}
+                  >
+                    <div className="w-14 h-14 left-[-12px] top-0 absolute bg-[rgba(104,35,162,0.7)] rounded-full flex items-center justify-center">
+                      <div
+                        className={`${
+                          isInView
+                            ? "animate__animated animate__bounceInDown"
+                            : ""
+                        }`}
+                      >
+                        <MilitaryTechOutlinedIcon fontSize="large" />
+                      </div>
+                    </div>
+                    <div className="ml-14">
+                      Award-Winning Creative Minds and Media Experts
                     </div>
                   </div>
-                  <div className="ml-14">
-                    Award-Winning Creative Minds and Media Experts
-                  </div>
+                  <p
+                    className={`ml-14 mt-2 text-lg w-[34rem] ${
+                      isInView ? "animate__animated animate__fadeIn" : ""
+                    }`}
+                  >
+                    We are a bunch of mad guys, not easy to handle. A motley
+                    group of national award-winning creative filmmakers from the
+                    Film & Television Institute of India Pune, visualisers and
+                    top communication professionals from the media &
+                    entertainment industry.
+                  </p>
                 </div>
-                <p
-                  className={`ml-14 mt-2 text-lg w-[34rem] ${
-                    isInView ? "animate__animated animate__fadeIn" : ""
-                  }`}
-                >
-                  We are a bunch of mad guys, not easy to handle. A motley group
-                  of national award-winning creative filmmakers from the Film &
-                  Television Institute of India Pune, visualisers and top
-                  communication professionals from the media & entertainment
-                  industry.
-                </p>
-              </div>
 
-              <div className="relative">
-                <div
-                  className={`text-2xl flex font-semibold ${
-                    isInView ? "animate__animated animate__bounceIn" : ""
-                  }`}
-                >
-                  <div className="w-14 h-14 left-[-12px] top-0 absolute bg-[rgba(104,35,162,0.7)] rounded-full flex items-center justify-center">
-                    <div
-                      className={`${
-                        isInView
-                          ? "animate__animated animate__bounceInDown"
-                          : ""
-                      }`}
-                    >
-                      <MovieCreationOutlinedIcon fontSize="large" />
+                <div className="relative">
+                  <div
+                    className={`text-2xl flex font-semibold ${
+                      isInView ? "animate__animated animate__bounceIn" : ""
+                    }`}
+                  >
+                    <div className="w-14 h-14 left-[-12px] top-0 absolute bg-[rgba(104,35,162,0.7)] rounded-full flex items-center justify-center">
+                      <div
+                        className={`${
+                          isInView
+                            ? "animate__animated animate__bounceInDown"
+                            : ""
+                        }`}
+                      >
+                        <MovieCreationOutlinedIcon fontSize="large" />
+                      </div>
+                    </div>
+                    <div className="ml-14">
+                      Innovative and Immersive Storytelling
                     </div>
                   </div>
-                  <div className="ml-14">
-                    Innovative and Immersive Storytelling
-                  </div>
+                  <p
+                    className={`ml-14 mt-2 text-lg w-[34rem] ${
+                      isInView ? "animate__animated animate__fadeIn" : ""
+                    }`}
+                  >
+                    As the way we are, we would narrate your dream and story
+                    through various communication tools that includes films,
+                    AVs, music digital media, print, outdoor, interpersonal
+                    communication through live arts and many more innovative
+                    solutions that go beyond the normal, in a manner, that is
+                    not only aesthetically pleasing and immersive but is
+                    technically brilliant as well. We are here to challenge the
+                    established norms.
+                  </p>
                 </div>
-                <p
-                  className={`ml-14 mt-2 text-lg w-[34rem] ${
-                    isInView ? "animate__animated animate__fadeIn" : ""
-                  }`}
-                >
-                  As the way we are, we would narrate your dream and story
-                  through various communication tools that includes films, AVs,
-                  music digital media, print, outdoor, interpersonal
-                  communication through live arts and many more innovative
-                  solutions that go beyond the normal, in a manner, that is not
-                  only aesthetically pleasing and immersive but is technically
-                  brilliant as well. We are here to challenge the established
-                  norms.
-                </p>
               </div>
-            </div>
 
-            <div>
-              <img
-                className={`absolute right-40 h-64 rounded-md ${
-                  isInView ? "animate__animated animate__backInUp" : ""
-                }`}
-                src={about2}
-                alt="Videography"
-              />
-
-              <div
-                className={`absolute top-64 right-72 border-white border-4 rounded-md ${
-                  isInView ? "animate__animated animate__backInDown" : ""
-                }`}
-              >
+              <div>
                 <img
-                  className="h-64 w-full rounded-md"
-                  src={about1}
-                  alt="Photography"
+                  className={`absolute right-40 h-64 rounded-md ${
+                    isInView ? "animate__animated animate__backInUp" : ""
+                  }`}
+                  src={about2}
+                  alt="Videography"
                 />
+
+                <div
+                  className={`absolute top-64 right-72 border-violet-300 border-4 rounded-md ${
+                    isInView ? "animate__animated animate__backInDown" : ""
+                  }`}
+                >
+                  <img
+                    className="h-64 w-full rounded-md"
+                    src={about1}
+                    alt="Photography"
+                  />
+                </div>
               </div>
             </div>
           </div>

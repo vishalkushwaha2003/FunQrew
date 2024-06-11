@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -43,11 +44,11 @@ const ContactCard = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsInView(true);
-          observer.disconnect(); // Disconnect after the first trigger if you don't want repeated animations
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of the section is visible
+        threshold: 0.1,
       }
     );
 
