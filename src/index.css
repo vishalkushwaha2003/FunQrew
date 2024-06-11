@@ -135,10 +135,10 @@
 
 .slideshow-container {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   right: 0;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   overflow: hidden; /* Keep overflow hidden to avoid showing the images outside the container */
 }
 
