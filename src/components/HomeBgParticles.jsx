@@ -2,7 +2,6 @@ import  { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 // Make sure to import the loadSlim function from the correct package
 import { loadSlim } from "@tsparticles/slim";
-import { height } from "@mui/system";
 
 const HomeBgParticles = () => {
   const [init, setInit] = useState(false);
@@ -88,7 +87,7 @@ const HomeBgParticles = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 4,
+                speed: 1,
                 straight: false,
               },
               number: {

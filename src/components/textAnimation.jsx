@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function TypeWriter() {
-  const words = ["hiii heloo vihslaljlk lfjlsdjfl", "Welcome to my website!", "This is a typewriter effect."];
+  const words = ['Ankit Srivastva Founder of FunQrew', "Rising Entrepreneur and Influencer", "ROLBOL Community Involvement","BiggBoss Season 13 : Cleared three rounds for entry","President of the ROLBOL community of Gorakhpur chapter","Excellent actor and a talented comedian","Team management ability"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -30,7 +30,7 @@ function TypeWriter() {
 
   return (
     <div className="flex basis-1/3 justify-center items-center">
-      <h2 className="text-[3vw] text-[rgba(58,12,97,0.91)]">{currentText}</h2>
+      <h2 className="text-[3vw] text-[rgba(58,12,97,0.91)] text-shadow font-bold">{currentText}</h2>
     </div>
   );
 }

@@ -135,11 +135,11 @@
 
 .slideshow-container {
   position: absolute;
-  bottom: 50px;
-  right: 0;
+  bottom: 0px;
+  right: 10px;
   width: 350px;
-  height: 350px;
-  overflow: hidden; /* Keep overflow hidden to avoid showing the images outside the container */
+  height: 400px;
+   /* Keep overflow hidden to avoid showing the images outside the container */
 }
 
 .slideshow-image {
@@ -187,3 +187,101 @@
     transform: scale(0.8);
   }
 }
+
+
+
+
+
+
+
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(5, 1, 39, 0.5); /* Adjust the values to your preference */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+.wordCarousel {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #eee;
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+
+.wordCarousel div {
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  height: 60px;
+}
+
+.wordCarousel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wordCarousel li {
+  font-family: Serif;
+  font-size: 2rem;
+  color: #eee;
+  font-weight: 700;
+  padding: 0 10px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+  white-space: nowrap;
+}
+
+.flip5 { animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip5 {
+  0% { margin-top: -225px; }
+  5% { margin-top: -180px; }
+  20% { margin-top: -180px; }
+  25% { margin-top: -135px; }
+  40% { margin-top: -135px; }
+  45% { margin-top: -90px; }
+  60% { margin-top: -90px; }
+  65% { margin-top: -45px; }
+  80% { margin-top: -45px; }
+  85% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -225px; }
+}
+
+
+@media (max-width: 768px) {
+  .wordCarousel li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wordCarousel li {
+    font-size: 1rem;
+  }
+} */
+
