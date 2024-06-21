@@ -37,10 +37,10 @@ function Home() {
 
   return (
     <div id="home" className={`relative w-full h-screen transition-all duration-[12000ms] ease-in-out overflow-hidden bg-gradient-to-br  from-[rgba(104,35,162,0.30)] to-[rgba(104,35,162,0.91)] flex items-center justify-center`}>
-      <div className="relative" style={{ marginRight: '100px' }}>
+      <div className="relative animate__animated animate__backInLeft" style={{ marginRight: '100px' }}>
         <HomePhotoCard />
       </div> 
-      <TypeWriter />
+      <TypeWriter  />
     </div>
   );
 }
