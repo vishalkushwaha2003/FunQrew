@@ -11,7 +11,7 @@ function Home() {
   const colors = [
     "from-[rgba(104,35,162,0.30)] to-[rgba(104,35,162,0.91)]",
     "from-[rgba(88,28,135,0.30)] to-[rgba(88,28,135,0.91)]",
-    "from-[rgba(74,4,78,0.30)] to-[rgba(74,4,78,0.91)]"
+    "from-[rgba(104,35,162,0.30)] to-[rgba(104,35,162,0.91)]",
   ];
 
   const images = [f1, f2, f3];
@@ -27,7 +27,7 @@ function Home() {
       setGradientIndex(prevIndex =>
         prevIndex === colors.length - 1 ? 0 : prevIndex + 1
       );
-    }, 6000); // Change images every 6 seconds
+    }, 12000); // Change images every 12 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -36,11 +36,10 @@ function Home() {
   const currentImage = images[currentImageIndex];
 
   return (
-    <div id="home" className={`relative w-full h-screen transition-all duration-[8000ms] ease-in-out overflow-hidden bg-gradient-to-br ${currentGradient} flex items-center justify-center`}>
+    <div id="home" className={`relative w-full h-screen transition-all duration-[12000ms] ease-in-out overflow-hidden bg-gradient-to-br  from-[rgba(104,35,162,0.30)] to-[rgba(104,35,162,0.91)] flex items-center justify-center`}>
       <div className="relative" style={{ marginRight: '100px' }}>
         <HomePhotoCard />
-        
-      </div>
+      </div> 
       <TypeWriter />
     </div>
   );

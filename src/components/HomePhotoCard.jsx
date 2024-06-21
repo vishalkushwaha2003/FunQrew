@@ -1,13 +1,13 @@
 import React from "react";
-import f1 from '../assets/homePhoto/founder1.png'
+import f4 from '../assets/homePhoto/founder4.png'
 
 function HomePhotoCard() {
   return (
     <div class="card ">
-        <img src={f1} alt="founder photo" />
+        <img src={f4} alt="founder photo" class='im'/>
   <div class="card__content">
-    <p class="card__title">Card Title</p>
-    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p class="card__title">Ankit Srivastva</p>
+    <p class="card__description"> Founder of FunQrew</p>
   </div>
 </div>
   );
