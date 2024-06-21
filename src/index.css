@@ -252,7 +252,7 @@
 .card {
   position: relative;
   width: 200px;
-  height: 260px;
+  height: 270px;
   background-color: transparent;
   border-radius: 15px;
   display: flex;
@@ -301,8 +301,8 @@
 .card__title {
   margin-top: 140px;
   font-size: 22px;
-  color: #1f04ebbc;
-  font-weight: 700;
+  color: white;
+  font-weight: 500;
 }
 
 .card:hover svg {
@@ -312,9 +312,9 @@
 .card__description {
   margin: 3px 10px;
   font-size: 14px;
-  color: #1f04eb80;
+  color: white;
   line-height: 1.4;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 
