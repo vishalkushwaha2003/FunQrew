@@ -74,11 +74,11 @@ const HomeBgParticles = () => {
                 value: "#ffffff",
               },
               links: {
-                color: "#ffffff",
+                color: "#000000",
                 distance: 200,
                 enable: true,
-                opacity: 0.5,
-                width: 1,
+                opacity: 0.2,
+                width: 0.5,
               },
               move: {
                 direction: "none",

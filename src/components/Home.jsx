@@ -5,13 +5,13 @@ import f2 from '../assets/homePhoto/founder2.png';
 import f3 from '../assets/homePhoto/founder3.png';
 import TypeWriter from "./textAnimation";
 import WordHeadingAnimation from "./WordHeadingAnimation";
+import HomePhotoCard from "./HomePhotoCard";
 
 function Home() {
   const colors = [
-    "from-[rgba(147,65,214,0.51)] to-[rgba(58,12,97,0.91)]",
-    "from-[rgba(255,105,180,0.51)] to-[rgba(255,20,147,0.91)]",
-    "from-[rgba(50,205,50,0.51)] to-[rgba(255,215,0,0.91)]",
-    "from-[rgba(30,144,255,0.51)] to-[rgba(0,191,255,0.91)]"
+    "from-[rgba(104,35,162,0.30)] to-[rgba(104,35,162,0.91)]",
+    "from-[rgba(88,28,135,0.30)] to-[rgba(88,28,135,0.91)]",
+    "from-[rgba(74,4,78,0.30)] to-[rgba(74,4,78,0.91)]"
   ];
 
   const images = [f1, f2, f3];
@@ -27,7 +27,7 @@ function Home() {
       setGradientIndex(prevIndex =>
         prevIndex === colors.length - 1 ? 0 : prevIndex + 1
       );
-    }, 6000); // Change images every 5 seconds
+    }, 6000); // Change images every 6 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -36,25 +36,12 @@ function Home() {
   const currentImage = images[currentImageIndex];
 
   return (
-    <div id="home" className={`relative w-full h-screen bg-gradient-to-br ${currentGradient} transition-colors duration-2000 ease-in-out overflow-hidden`}>
-      <div className="absolute h-20 left-28 w-[600px] bottom-52">
-        <TypeWriter />
+    <div id="home" className={`relative w-full h-screen transition-all duration-[8000ms] ease-in-out overflow-hidden bg-gradient-to-br ${currentGradient} flex items-center justify-center`}>
+      <div className="relative" style={{ marginRight: '100px' }}>
+        <HomePhotoCard />
+        
       </div>
-      <div className="slideshow-container">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`founder${index + 1}`}
-            className={`${
-              index === currentImageIndex
-                ? "animate__animated animate__bounceIn"
-                : "hidden"
-            }`}
-          />
-        ))}
-      </div>
-      <HomeBgParticles />
+      <TypeWriter />
     </div>
   );
 }
