@@ -24,7 +24,7 @@ const App = () => {
         <AboutUs />
       </div>
 
-      <div className="pt-14 pb-24 bg-violet-400">
+      <div className="pt-14 pb-24 bg-violet-600">
         <Contact />
       </div>
     </div>
