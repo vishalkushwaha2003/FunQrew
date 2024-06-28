@@ -319,6 +319,16 @@
 
 
 
+/* Assuming you have a CSS file imported in your project */
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 
 
 

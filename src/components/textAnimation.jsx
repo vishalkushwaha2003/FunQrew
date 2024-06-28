@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function TypeWriter() {
-  const words = ['Ankit Srivastva Founder of FunQrew', "Rising Entrepreneur and Influencer", "ROLBOL Community Involvement","BiggBoss Season 13 : Cleared three rounds for entry","President of the ROLBOL community of Gorakhpur chapter","Excellent actor and a talented comedian","Team management ability"];
+  const words = ['Ankit Srivastva Founder of FunQrew','Mr. Alok Srivastava Honorary Patron','Lucky Arush With 5 years of experience at Kuku FM', "Rising Entrepreneur and Influencer", "ROLBOL Community Involvement","BiggBoss Season 13 : Cleared three rounds for entry","President of the ROLBOL community of Gorakhpur chapter","Excellent actor and a talented comedian","Team management ability"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
