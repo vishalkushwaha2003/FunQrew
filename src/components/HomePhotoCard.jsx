@@ -20,7 +20,7 @@ function HomePhotoCard() {
   }, [photos.length]);
 
   return (
-    <div>
+    <div className="animate__animated animate__fadeInRight">
       {photos.map((photo, index) => (
         <HomePhotoCardContent
           key={index}
