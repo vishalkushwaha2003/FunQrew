@@ -134,9 +134,7 @@ const WhatWeDoCard = () => {
                 : ""
             } `}
           >
-            <h1 className="text-xl text-white text-center">
-              PERSONAL RELATION
-            </h1>
+            <h1 className="text-xl text-white text-center">PUBLIC RELATION</h1>
             <p className="text-left ml-6 mt-2 text-white text-md font-light mr-2">
               We offer personal branding services to help individuals craft and
               amplify their unique professional identity.

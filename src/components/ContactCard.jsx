@@ -119,7 +119,10 @@ const ContactCard = () => {
                 <div className="mr-2">
                   <LocationOnIcon fontSize="medium" />
                 </div>
-                <p className="text-base">Near Azad Nagar, Kanpur, 21010</p>
+                <p className="text-base">
+                  12A03, Kalypso Court Tower 3, Jaypee Greens Wishtown Sector
+                  128, Noida, 201304
+                </p>
               </div>
 
               <div className="flex mt-6">
