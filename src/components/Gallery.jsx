@@ -26,6 +26,9 @@ import g23 from '../assets/galleryPhoto/g23.jpg';
 import g24 from '../assets/galleryPhoto/g24.jpg';
 import g25 from '../assets/galleryPhoto/g25.jpg';
 import g26 from '../assets/galleryPhoto/g26.jpg';
+import g27 from '../assets/galleryPhoto/g27.jpg';
+import g28 from '../assets/galleryPhoto/g28.jpg';
+
 
 const images = [
   { src: g1, label: 'VR', span: 'h-48 md:h-80' },
@@ -54,6 +57,9 @@ const images = [
   { src: g24, label: 'VR', span: 'h-48 md:h-80' },
   { src: g25, label: 'VR', span: 'h-48 md:h-80' },
   { src: g26, label: 'VR', span: 'h-48 md:h-80' },
+  { src: g27, label: 'VR', span: 'h-48 md:col-span-2 md:h-80' },
+  { src: g28, label: 'VR', span: 'h-48  md:h-80' },
+
 ];
 
 const animations = [
