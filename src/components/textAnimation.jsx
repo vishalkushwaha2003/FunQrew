@@ -20,10 +20,16 @@ function TextAnimation() {
 
   return (
     <div className="text-[rgba(58,12,97,0.91)]">
-      <div className="text-[3vw] animate__animated animate__fadeInLeft text-shadow font-bold">
+      <div
+        key={currentIndex} // Add a key that changes with currentIndex
+        className="text-[3vw] animate__animated animate__fadeInLeft text-shadow font-bold"
+      >
         {names[currentIndex]}
       </div>
-      <div className="text-[2vw] animate__animated animate__fadeInLeft text-shadow">
+      <div
+        key={currentIndex + names.length} // Ensure a unique key for the second element
+        className="text-[2vw] animate__animated animate__fadeInLeft text-shadow"
+      >
         {designations[currentIndex]}
       </div>
     </div>
@@ -31,8 +37,6 @@ function TextAnimation() {
 }
 
 export default TextAnimation;
-
-
 
 
 
