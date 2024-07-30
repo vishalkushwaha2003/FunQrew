@@ -40,7 +40,7 @@ function AboutUs() {
           <div>
             <h1 className="text-5xl text-center mt-32 font-bold">ABOUT US</h1>
 
-            <div className="flex ml-20 mt-24 ">
+            <div className="flex ml-10 md:ml-20 mt-24 ">
               <div className="w-1/2 ml-10  md:mt-[30rem] lg:mt-0">
                 <div className="relative mb-7 -ml-6 md:ml-0">
                   <div
@@ -64,7 +64,7 @@ function AboutUs() {
                     </div>
                   </div>
                   <p
-                    className={`ml-2 md:ml-14 mt-2 w-[15rem] sm:w-[23rem] text-lg md:w-[34rem] ${
+                    className={`ml-2 md:ml-14 mt-2 w-[18rem] sm:w-[23rem] text-lg md:w-[34rem] ${
                       isInView ? "animate__animated animate__fadeIn" : ""
                     }`}
                   >
@@ -98,7 +98,7 @@ function AboutUs() {
                     </div>
                   </div>
                   <p
-                    className={`ml-2 md:ml-14 mt-2 w-[15rem] sm:w-[23rem] text-lg md:w-[34rem] ${
+                    className={`ml-2 md:ml-14 mt-2 w-[18rem] sm:w-[23rem] text-lg md:w-[34rem] ${
                       isInView ? "animate__animated animate__fadeIn" : ""
                     }`}
                   >
