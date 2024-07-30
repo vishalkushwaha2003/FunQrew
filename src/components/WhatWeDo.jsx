@@ -11,7 +11,7 @@ function WhatWeDo() {
           </h1>
         </div>
 
-        <div className="mt-20 ml-10 ">
+        <div className="mt-20 ">
           <WhatWeDoCard />
         </div>
       </div>

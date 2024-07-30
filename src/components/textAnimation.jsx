@@ -22,7 +22,7 @@ function TextAnimation() {
     <div className="text-[rgba(58,12,97,0.91)]">
       <div
         key={currentIndex} // Add a key that changes with currentIndex
-        className="text-[3vw] animate__animated animate__fadeInLeft text-shadow font-bold"
+        className="text-[3vw] mb-4 animate__animated animate__fadeInLeft text-shadow font-bold"
       >
         {names[currentIndex]}
       </div>
@@ -37,10 +37,6 @@ function TextAnimation() {
 }
 
 export default TextAnimation;
-
-
-
-
 
 // import React, { useState, useEffect } from 'react';
 

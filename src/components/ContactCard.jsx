@@ -68,7 +68,7 @@ const ContactCard = () => {
       ref={contactRef}
       className="relative flex flex-col-reverse md:flex-row justify-center"
     >
-      <div className=" w-[20rem] h-[30rem] md:w-[45rem] md:h-[30rem] bg-purple-200 text-black mx-auto mt-10">
+      <div className=" w-[20rem] h-[30rem] md:w-[45rem] md:h-[30rem] bg-purple-200 text-black mx-auto mt-10 rounded-lg md:rounded-none">
         <div className="text-center mt-8 md:ml-64">
           <h1 className="text-3xl font-bold">Get In Touch</h1>
         </div>
