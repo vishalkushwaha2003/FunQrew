@@ -63,7 +63,7 @@ const images = [
 ];
 
 const animations = [
-  'animate__fadeIn animate__slow'
+  'animate__fadeIn'
 ];
 
 function getRandomAnimation() {
