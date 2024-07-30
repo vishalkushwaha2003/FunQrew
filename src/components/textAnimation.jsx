@@ -22,13 +22,13 @@ function TextAnimation() {
     <div className="text-[rgba(58,12,97,0.91)]">
       <div
         key={currentIndex} // Add a key that changes with currentIndex
-        className="lg:text-7xl md:text-6xl sm:text-5xl text-4xl mb-4 animate__animated sm:animate__fadeInLeft animate__fadeInDown text-shadow font-bold"
+        className="lg:text-7xl md:text-6xl sm:text-5xl text-4xl mb-4 animate__animated sm:animate__fadeInLeft animate__fadeInDown animate__slow text-shadow font-bold"
       >
         {names[currentIndex]}
       </div>
       <div
         key={currentIndex + names.length} // Ensure a unique key for the second element
-        className="lg:text-5xl md:text-4xl sm:text-4xl text-3xl animate__animated sm:animate__fadeInLeft animate__fadeInDown text-shadow"
+        className="lg:text-5xl md:text-4xl sm:text-4xl text-3xl animate__animated sm:animate__fadeInLeft animate__fadeInDown animate__slow text-shadow"
       >
         {designations[currentIndex]}
       </div>
