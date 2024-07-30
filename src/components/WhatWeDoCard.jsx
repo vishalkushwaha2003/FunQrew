@@ -36,12 +36,12 @@ const WhatWeDoCard = () => {
   }, []);
 
   return (
-    <div ref={whatWeDoRef} className="flex justify-around mr-12">
+    <div ref={whatWeDoRef} className="flex justify-around  flex-wrap">
       <Tilt>
         <div
           className={`${
             isInView ? "animate__animated animate__rotateInDownLeft" : ""
-          } hover:cursor-pointer h-[26rem] w-60 bg-[rgba(104,35,162,0.9)]  rounded-xl flex flex-col items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
+          } mb-4 hover:cursor-pointer h-[26rem] w-60 bg-[rgba(104,35,162,0.9)]  rounded-xl flex flex-col items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
         >
           <div
             className={`h-40 w-40 bg-[#b975f1] ${
@@ -77,7 +77,7 @@ const WhatWeDoCard = () => {
         <div
           className={`${
             isInView ? "animate__animated animate__zoomInUp" : ""
-          } hover:pointer h-[26rem] w-60 bg-[rgba(104,35,162,0.9)]  rounded-xl flex flex-col hover:cursor-pointer items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
+          } mb-4 hover:pointer h-[26rem] w-60 bg-[rgba(104,35,162,0.9)]  rounded-xl flex flex-col hover:cursor-pointer items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
         >
           <div
             className={`h-40 w-40 bg-[#b975f1] ${
@@ -112,7 +112,7 @@ const WhatWeDoCard = () => {
         <div
           className={`${
             isInView ? "animate__animated animate__zoomIn" : ""
-          } hover:pointer h-[26rem] w-60 bg-[rgba(104,35,162,0.9)] hover:cursor-pointer rounded-xl flex flex-col items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
+          } mb-4 hover:pointer h-[26rem] w-60 bg-[rgba(104,35,162,0.9)] hover:cursor-pointer rounded-xl flex flex-col items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
         >
           <div
             className={`h-40 w-40 bg-[#b975f1] ${
@@ -147,7 +147,7 @@ const WhatWeDoCard = () => {
         <div
           className={`${
             isInView ? "animate__animated animate__zoomInDown" : ""
-          } h-[26rem] w-60 bg-[rgba(104,35,162,0.9)] rounded-xl hover:cursor-pointer flex flex-col items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
+          } mb-4 h-[26rem] w-60 bg-[rgba(104,35,162,0.9)] rounded-xl hover:cursor-pointer flex flex-col items-center hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
         >
           <div
             className={`h-40 w-40 bg-[#b975f1] ${
@@ -183,7 +183,7 @@ const WhatWeDoCard = () => {
         <div
           className={`${
             isInView ? "animate__animated animate__rotateInDownRight" : ""
-          } h-[26rem] w-60 bg-[rgba(104,35,162,0.9)] rounded-xl hover:cursor-pointer flex flex-col items-center  hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
+          } mb-4 h-[26rem] w-60 bg-[rgba(104,35,162,0.9)] rounded-xl hover:cursor-pointer flex flex-col items-center  hover:shadow-[#b975f1] hover:duration-500 hover:shadow-xl`}
         >
           <div
             className={`h-40 w-40 bg-[#b975f1] ${

@@ -64,13 +64,16 @@ const ContactCard = () => {
   }, []);
 
   return (
-    <div ref={contactRef} className="relative flex justify-center">
-      <div className="w-[45rem] h-[30rem] bg-purple-200 text-black">
-        <div className="mt-8 ml-64">
+    <div
+      ref={contactRef}
+      className="relative flex flex-col-reverse md:flex-row justify-center"
+    >
+      <div className=" w-[20rem] h-[30rem] md:w-[45rem] md:h-[30rem] bg-purple-200 text-black mx-auto mt-10">
+        <div className="text-center mt-8 md:ml-64">
           <h1 className="text-3xl font-bold">Get In Touch</h1>
         </div>
 
-        <div className="ml-64 mt-10">
+        <div className="md:ml-64 text-center mt-10">
           <div className="mt-4">
             <CustomTextField
               id="name"
@@ -103,7 +106,7 @@ const ContactCard = () => {
         </div>
       </div>
 
-      <div className="absolute top-6 left-72">
+      <div className=" mx-auto md:mx-0 md:absolute md:top-6 md:left-72">
         <Tilt>
           <div
             className={`h-[24rem] w-[19rem] bg-purple-700 ${

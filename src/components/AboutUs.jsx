@@ -40,9 +40,9 @@ function AboutUs() {
           <div>
             <h1 className="text-5xl text-center mt-32 font-bold">ABOUT US</h1>
 
-            <div className="flex ml-20 mt-24">
-              <div className="w-1/2 ml-10">
-                <div className="relative mb-6">
+            <div className="flex ml-20 mt-24 ">
+              <div className="w-1/2 ml-10  md:mt-[30rem] lg:mt-0">
+                <div className="relative mb-7 -ml-6 md:ml-0">
                   <div
                     className={`text-2xl flex font-semibold ${
                       isInView ? "animate__animated animate__bounceIn" : ""
@@ -59,12 +59,12 @@ function AboutUs() {
                         <MilitaryTechOutlinedIcon fontSize="large" />
                       </div>
                     </div>
-                    <div className="ml-14">
+                    <div className="ml-14 -mr-10 md:mr-0 text-[20px]">
                       Award-Winning Creative Minds and Media Experts
                     </div>
                   </div>
                   <p
-                    className={`ml-14 mt-2 text-lg w-[34rem] ${
+                    className={`ml-2 md:ml-14 mt-2 w-[15rem] sm:w-[23rem] text-lg md:w-[34rem] ${
                       isInView ? "animate__animated animate__fadeIn" : ""
                     }`}
                   >
@@ -76,7 +76,7 @@ function AboutUs() {
                   </p>
                 </div>
 
-                <div className="relative">
+                <div className="relative -ml-6 md:ml-0">
                   <div
                     className={`text-2xl flex font-semibold ${
                       isInView ? "animate__animated animate__bounceIn" : ""
@@ -93,12 +93,12 @@ function AboutUs() {
                         <MovieCreationOutlinedIcon fontSize="large" />
                       </div>
                     </div>
-                    <div className="ml-14">
+                    <div className="ml-14 -mr-10 md:mr-0 text-[20px]">
                       Innovative and Immersive Storytelling
                     </div>
                   </div>
                   <p
-                    className={`ml-14 mt-2 text-lg w-[34rem] ${
+                    className={`ml-2 md:ml-14 mt-2 w-[15rem] sm:w-[23rem] text-lg md:w-[34rem] ${
                       isInView ? "animate__animated animate__fadeIn" : ""
                     }`}
                   >
@@ -114,7 +114,7 @@ function AboutUs() {
                 </div>
               </div>
 
-              <div>
+              <div className="hidden md:block">
                 <img
                   className={`absolute right-40 h-64 rounded-md ${
                     isInView ? "animate__animated animate__backInUp" : ""
