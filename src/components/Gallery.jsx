@@ -63,14 +63,7 @@ const images = [
 ];
 
 const animations = [
-  'animate__fadeInDown',
-  'animate__fadeInLeft',
-  'animate__fadeInRight',
-  'animate__fadeInUp',
-  'animate__fadeInTopLeft',
-  'animate__fadeInTopRight',
-  'animate__fadeInBottomLeft',
-  'animate__fadeInBottomRight'
+  'animate__fadeIn animate__slow'
 ];
 
 function getRandomAnimation() {
@@ -110,7 +103,7 @@ function Gallery() {
   }, []);
 
   return (
-    <div id='gallery'>
+      <div id='gallery' className='bg-[rgba(104,35,162,0.91)]'>
       <div className="dark:bg-violet-400 h-full py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
