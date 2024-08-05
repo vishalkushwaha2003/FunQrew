@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 function TextAnimation() {
-  const names = ["Ankit Srivastva", "Mr. Alok Srivastava", "Lucky Arush"];
+  const names = ["Ankit Srivastava", "Mr. Alok Srivastava", "Lucky Arush"];
   const designations = [
-    "Founder of FunQrew",
+    "FunQrew",
     "Honorary Patron",
     "Creative Director",
   ];
